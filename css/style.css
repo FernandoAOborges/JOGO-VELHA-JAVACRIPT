@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.stage {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: -0.25em;
+}
+
+.celulas {
+  background-color: darkcyan;
+  width: 100px;
+  height: 100px;
+  float: right;
+  margin: 3px;
+  /* display: inline-block; */
+}
+
+.o {
+  position: relative;
+}
+
+.o:after {
+  position: absolute;
+  content: "\1F6E1";
+  font-size: 50px;
+  line-height: 100px;
+  left: 25px;
+}
+
+.x {
+  position: relative;
+}
+
+.x:after {
+  position: absolute;
+  content: "\2694";
+  font-size: 50px;
+  line-height: 100px;
+  left: 25px;
+}
+
+.controles {
+  width: 312px;
+  height: 70px;
+  background-color: tomato;
+  text-align: center;
+  position: relative;
+}
+
+.controles h1 {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.controles button {
+  position: absolute;
+  bottom: 50%;
+  top: 0;
+  right: 10px;
+  transform: translateY(50%);
+  border-radius: 3px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
